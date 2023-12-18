@@ -128,7 +128,14 @@ function emailSend(){
         Subject : "This is the subject",
         Body : body
     }).then(
-      message => alert(message)
+      message => {
+          if(message=='OK'){
+             swal("Thank You!", "Your message has been sent!", "success"); 
+          }
+          else{
+              swal("Error!", "Something went wrong!", "error");
+          }
+      }
     );
 }
 
