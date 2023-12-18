@@ -109,7 +109,14 @@ upArrow.addEventListener('click', function (e) {
         behavior: 'smooth'
     });
 });
+
 function emailSend(){
+
+    var name = document.getElementById('sender_name').value;
+    var email = document.getElementById('sender_email').value;
+    var number = document.getElementById('sender_number').value;
+    var subject = document.getElementById('emial-subject').value;
+    var body = document.getElementById('sender_message').value;
 
     Email.send({
         Host : "smtp.elasticemail.com",
@@ -118,8 +125,9 @@ function emailSend(){
         To : 'sagnikghosh333@gmail.com',
         From : "sagnikghosh333@gmail.com",
         Subject : "This is the subject",
-        Body : "And this is the body"
+        Body : body
     }).then(
       message => alert(message)
     );
 }
+
