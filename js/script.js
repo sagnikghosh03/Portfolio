@@ -115,8 +115,9 @@ function emailSend(){
     var name = document.getElementById('sender_name').value;
     var email = document.getElementById('sender_email').value;
     var number = document.getElementById('sender_number').value;
-    var subject = document.getElementById('emial-subject').value;
-    var body = document.getElementById('sender_message').value;
+    var subject = document.getElementById('email-subject').value;
+    var message = document.getElementById('sender_message').value;
+    var body = "Name:" + name + "<br/> Email:" + email + "<br/> Number:" + number + "<br/> Subject:" + subject + "<br/> Message:" + message;
 
     Email.send({
         Host : "smtp.elasticemail.com",
