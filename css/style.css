@@ -495,7 +495,7 @@ textarea
     width: 48%;
 }
 textarea{
-    resize: none;
+    resize: vertical;
 }
 .contact form .btn{
     margin-top: 2rem;
