@@ -98,7 +98,7 @@ ScrollReveal().reveal('.home-img img,.skills-container,.projects-box,.certificat
 
 ScrollReveal().reveal('.homecontent h1,.about-img img', { origin: 'left' })
 
-ScrollReveal().reveal('.homecontent h3,.homecontent p,.about-content', { origin: 'right' });
+ScrollReveal().reveal('.homecontent h3,.homecontent p,.about-content,.profession-container', { origin: 'right' });
 
 let upArrow = document.querySelector(".footer-iconTop a");
 
